@@ -1,0 +1,162 @@
+{
+    "memo": "fab5654960660ccc9741b6735cc735b985cb228531ee2add727fb6df64f6040a",
+    "projects": [
+        {
+            "name": "github.com/aws/aws-sdk-go",
+            "version": "v1.6.18",
+            "revision": "3f8f870ec9939e32b3372abf74d24e468bcd285d",
+            "packages": [
+                "aws",
+                "aws/credentials",
+                "aws/credentials/ec2rolecreds",
+                "aws/ec2metadata",
+                "aws/session",
+                "service/ecr"
+            ]
+        },
+        {
+            "name": "github.com/fsnotify/fsnotify",
+            "version": "v1.4.2",
+            "revision": "629574ca2a5df945712d3079857300b5e4da0236",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/go-ini/ini",
+            "version": "v1.24.0",
+            "revision": "e3c2d47c61e5333f9aa2974695dd94396eb69c75",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/hashicorp/hcl",
+            "branch": "master",
+            "revision": "372e8ddaa16fd67e371e9323807d056b799360af",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/inconshreveable/mousetrap",
+            "branch": "master",
+            "revision": "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/jmespath/go-jmespath",
+            "version": "0.2.2",
+            "revision": "3433f3ea46d9f8019119e7dd41274e112a2359a9",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/magiconair/properties",
+            "version": "v1.7.0",
+            "revision": "c265cfa48dda6474e208715ca93e987829f572f8",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/mitchellh/mapstructure",
+            "branch": "master",
+            "revision": "db1efb556f84b25a0a13a04aad883943538ad2e0",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/pelletier/go-buffruneio",
+            "branch": "master",
+            "revision": "df1e16fde7fc330a0ca68167c23bf7ed6ac31d6d",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/pelletier/go-toml",
+            "version": "v0.4.0",
+            "revision": "d464759235b8fd59f8ab4c44807d7c36e1678add",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/spf13/afero",
+            "branch": "master",
+            "revision": "72b31426848c6ef12a7a8e216708cb0d1530f074",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/spf13/cast",
+            "branch": "master",
+            "revision": "d1139bab1c07d5ad390a65e7305876b3c1a8370b",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/spf13/cobra",
+            "revision": "35136c09d8da66b901337c6e86fd8e88a1a255bd",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/spf13/jwalterweatherman",
+            "branch": "master",
+            "revision": "fa7ca7e836cf3a8bb4ebf799f472c12d7e903d66",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/spf13/pflag",
+            "branch": "master",
+            "revision": "9ff6c6923cfffbcd502984b8e0c80539a94968b7",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/spf13/viper",
+            "branch": "master",
+            "revision": "5ed0fc31f7f453625df314d8e66b9791e8d13003",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "golang.org/x/sys",
+            "branch": "master",
+            "revision": "7a6e5648d140666db5d920909e082ca00a87ba2c",
+            "packages": [
+                "unix"
+            ]
+        },
+        {
+            "name": "golang.org/x/text",
+            "branch": "master",
+            "revision": "0a713d81dad5d132d6b6e8adc5a9eaf123c38631",
+            "packages": [
+                "transform",
+                "unicode/norm"
+            ]
+        },
+        {
+            "name": "gopkg.in/yaml.v2",
+            "branch": "v2",
+            "revision": "4c78c975fe7c825c6d1466c42be594d1d6f3aba6",
+            "packages": [
+                "."
+            ]
+        }
+    ]
+}
