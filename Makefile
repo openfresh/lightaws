@@ -22,8 +22,6 @@ build-all:
 		$(call build-artifact,linux,arm)
 		$(call build-artifact,linux,arm64)
 		$(call build-artifact,darwin,amd64)
-		$(call build-artifact,windows,386)
-		$(call build-artifact,windows,amd64)
 
 build:
 		go build -o bin/$(APP) $(MAIN_FILE)
