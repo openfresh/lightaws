@@ -5,9 +5,11 @@ if [ -z "$GITHUB_TOKEN" ]; then
   exit 1
 fi
 
-if [ -z "$CIRCLE_TAG" ]; then
+if [ ! -z "$CIRCLE_TAG" ]; then
   TAG=$CIRCLE_TAG
 fi
+
+echo "TAG=$TAG"
 
 UPLOAD_URL=`curl -s -X POST \
   -H "Authorization: token $GITHUB_TOKEN" \
