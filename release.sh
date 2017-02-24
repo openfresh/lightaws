@@ -11,14 +11,27 @@ fi
 
 echo "TAG=$TAG"
 
-UPLOAD_URL=`curl -s -X POST \
+curl -s -X POST \
   -H "Authorization: token $GITHUB_TOKEN" \
-  https://api.github.com/repos/openfresh/lightaws/releases/tags/$TAG | grep upload_url | sed -e "s/\s*\"upload_url\": \"//" | sed -e "s/\",//" | sed -e "s/{?name,label}/?name=/"`
+  -H "Content-Type: application/json" \
+  -d "{
+  \"tag_name\": \"$TAG\",
+  \"target_commitish\": \"master\",
+  \"name\": \"$TAG\",
+  \"body\": \"$TAG\",
+  \"draft\": true,
+  \"prerelease\": true
+}" \
+    https://api.github.com/repos/openfresh/lightaws/releases > .tag.json
 
 if [ $? -ne 0 ]; then
   echo "create release failed." 1>&2
   exit 1
 fi
+
+UPLOAD_URL=`cat .tag.json | grep upload_url | sed -e "s/\s*\"upload_url\": \"//" | sed -e "s/\",//" | sed -e "s/{?name,label}/?name=/" | sed -e "s/  //"`
+
+echo "UPLOAD_URL=$UPLOAD_URL"
 
 for file in `ls artifacts`
 do

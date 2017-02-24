@@ -1,3 +1,4 @@
 vendor/
 bin/
 artifacts/
+.tag.json
