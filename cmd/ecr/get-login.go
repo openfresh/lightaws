@@ -61,7 +61,7 @@ NOTE:
 			}
 
 			loginCommand := fmt.Sprintf("docker login -u %s -p %s -e none %s", tokens[0], tokens[1], *target.ProxyEndpoint)
-			cmd.Println(loginCommand)
+			fmt.Println(loginCommand)
 			return nil
 		},
 	}
