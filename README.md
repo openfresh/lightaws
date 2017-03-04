@@ -1,6 +1,11 @@
 lightaws
 ==========
 
+[![Circle CI](https://circleci.com/gh/openfresh/lightaws.svg?style=shield&circle-token=6aafa4f2691fc1b6cebc6efc62d50d03d834ad36)](https://circleci.com/gh/openfresh/lightaws)
+[![Language](http://img.shields.io/badge/language-go-brightgreen.svg?style=flat)](https://golang.org/)
+[![issues](https://img.shields.io/github/issues/openfresh/lightaws.svg?style=flat)](https://github.com/openfresh/lightaws/issues?state=open)
+[![License: MIT](http://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
+
 lightaws is a aws command line tool written in Golang.
 
 ### Motivation
