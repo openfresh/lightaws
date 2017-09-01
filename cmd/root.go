@@ -18,6 +18,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/openfresh/lightaws/cmd/ec2"
 	"github.com/openfresh/lightaws/cmd/ecr"
 	"github.com/openfresh/lightaws/cmd/metadata"
 	"github.com/spf13/cobra"
@@ -53,6 +54,7 @@ func init() {
 
 	RootCmd.AddCommand(
 		metadata.MetadataCmd,
+		ec2.EC2Cmd,
 		ecr.EcrCmd,
 	)
 }
