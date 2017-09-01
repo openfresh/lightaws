@@ -5,8 +5,8 @@ MAIN_FILE=main.go
 
 BASE_PACKAGE=github.com/openfresh/lightaws
 deps:
-		go get github.com/golang/dep
-		go get github.com/golang/lint/golint
+		go get -u github.com/golang/dep/cmd/dep
+		go get -u github.com/golang/lint/golint
 		dep ensure
 
 define build-artifact
