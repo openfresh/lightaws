@@ -19,6 +19,7 @@ import (
 	"os"
 
 	"github.com/openfresh/lightaws/cmd/ecr"
+	"github.com/openfresh/lightaws/cmd/metadata"
 	"github.com/spf13/cobra"
 )
 
@@ -51,6 +52,7 @@ func init() {
 	RootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 
 	RootCmd.AddCommand(
+		metadata.MetadataCmd,
 		ecr.EcrCmd,
 	)
 }
