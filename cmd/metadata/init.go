@@ -22,4 +22,5 @@ var (
 func init() {
 	MetadataCmd.AddCommand(regionCmd)
 	MetadataCmd.AddCommand(instanceIdCmd)
+	MetadataCmd.AddCommand(instanceTypeCmd)
 }
