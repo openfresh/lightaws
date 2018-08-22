@@ -60,7 +60,7 @@ NOTE:
 				return fmt.Errorf("authorization token is invalid format. [%s]", encoded)
 			}
 
-			loginCommand := fmt.Sprintf("docker login -u %s -p %s -e none %s", tokens[0], tokens[1], *target.ProxyEndpoint)
+			loginCommand := fmt.Sprintf("docker login -u %s -p %s %s", tokens[0], tokens[1], *target.ProxyEndpoint)
 			fmt.Println(loginCommand)
 			return nil
 		},
